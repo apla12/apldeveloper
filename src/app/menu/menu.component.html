@@ -1,10 +1,10 @@
   <mat-toolbar fxLayout="row" class="menu-fundo">
 
     <span fxFlex>
-      <button mat-icon-button class="icon">
+      <button mat-icon-button class="icon" > <!-- fxShow="true" -->
         <img src="../../assets/img/eua.jpg" class="btn-width">
       </button>
-      <button mat-icon-button class="icon">
+      <button mat-icon-button class="icon">  <!-- fxShow="true" -->
         <img src="../../assets/img/brazil.jpg" class="btn-width">
       </button>
     </span>
@@ -15,7 +15,7 @@
     </button> -->
 
     <button mat-icon-button [matMenuTriggerFor]="dropMenu">
-      <mat-icon>menu</mat-icon>
+      <mat-icon aria-hidden="false" fontIcon="menu"></mat-icon>
     </button>
 
     <mat-menu #dropMenu="matMenu">
