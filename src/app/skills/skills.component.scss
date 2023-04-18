@@ -1,0 +1,155 @@
+.body{
+    background-color: #f5f5f5;
+    height: auto;
+    width: 100vw;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.titulo{
+    font-size: 2.5em;
+    font-family: 'Comfortaa';
+    text-align: center;
+    margin-top: 1em;
+    // margin-bottom: 1em;
+}
+
+hr {
+    width: 20%;
+	border: 0;
+    height: 2px;
+    margin-bottom: 1em;
+    background-image: linear-gradient(to right, transparent, rgb(82, 81, 81), transparent); 
+}
+
+.hr-div {
+    width: 80%;
+	border: 0;
+    height: 2px;
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+    background-image: linear-gradient(to right, transparent, rgb(82, 81, 81), transparent); 
+}
+
+.menu-central mat-icon {
+    color: #ff6969;
+  }
+  
+.card-container {
+    padding: 5px;
+    cursor: pointer;
+}
+  
+mat-card {
+    width: 90%;
+    height: 90%;
+}
+
+.t-title{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    // color: #ff6969;
+} 
+
+.t-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.b-skills{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.mat-tree-node {
+    min-height: 17px;
+}
+
+.mat-list-icon {
+    color: rgba(0, 0, 0, 0.54);
+  }
+
+  .t-cont{
+      font-size: 14px;
+  }
+
+  .mat-chip{
+      background: #ff6969;
+      color: #fff;
+  }
+
+.s-list{
+    font-size: 13px;
+}
+
+.mat-list-base .mat-list-item, .mat-list-base .mat-list-option {
+    display: block;
+    height: 28px;
+    -webkit-tap-highlight-color: transparent;
+    width: 100%;
+    padding: 0;
+}
+
+.mat-list-base {
+    padding-top: 0px;
+    display: block;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.f-cards{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    color: #494848;
+}
+
+.card-skills{
+    padding-bottom: 1em;
+    padding-top: 1em;
+    
+}
+
+
+#quote{
+    background: url(../../assets/img/quote.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+#quote .quote-btn {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #ff6a6a;
+    border-radius: 25px;
+    
+}
+ 
+.p-tit{
+ font-size: 250%;
+ font-family: 'Comfortaa';
+}
+
+.p-subtit{
+    font-size: 140%;
+    font-family: 'Comfortaa';
+}
+
+.f-free{
+    height: 18em;
+}
+
+.f-text{
+    // padding-top: 4.5em;
+    text-shadow: 0.1em 0.1em 0.2em #FF6A6A;
+}
+
+
+
+
+

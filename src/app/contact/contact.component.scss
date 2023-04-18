@@ -1,0 +1,44 @@
+.body{
+    background-color: #f5f5f5;
+    height: auto;
+    width: 100vw;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.titulo{
+    font-size: 2.5em;
+    font-family: 'Comfortaa';
+    text-align: center;
+    margin-top: 1em;
+    // margin-bottom: 1em;
+}
+
+hr {
+    width: 20%;
+	border: 0;
+    height: 2px;
+    margin-bottom: 1em;
+    background-image: linear-gradient(to right, transparent, rgb(82, 81, 81), transparent); 
+}
+
+.col{
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.col-textarea{
+    margin-top: 25px;
+}
+
+.full-width{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.btnSend{
+    background-color: #ff6969;
+    color: #fff;
+}

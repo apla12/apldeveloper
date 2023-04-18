@@ -1,0 +1,47 @@
+.body{
+    height: auto;
+    width: 100vw;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.titulo{
+    font-size: 2.5em;
+    font-family: 'Comfortaa';
+    text-align: center;
+    margin-top: 1em;
+    // margin-bottom: 1em;
+}
+
+hr {
+    width: 20%;
+	border: 0;
+    height: 2px;
+    margin-bottom: 1em;
+    background-image: linear-gradient(to right, transparent, rgb(82, 81, 81), transparent); 
+}
+
+.aling-text{
+    text-align: center;
+}
+
+.img-about{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.p-about{
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    //margin-top: 2em;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+.d-card{
+    margin-top: 20px;
+    width: 90%;
+}

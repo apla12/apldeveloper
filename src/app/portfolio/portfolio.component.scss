@@ -1,0 +1,61 @@
+.body{
+    height: auto;
+    width: 100vw;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.titulo{
+    padding-top: 10px;
+    font-size: 2.5em;
+    font-family: 'Comfortaa';
+    text-align: center;
+    margin-top: 1em;
+}
+
+hr {
+    width: 20%;
+    border: 0;
+    margin-bottom: 1em;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, rgb(82, 81, 81), transparent); 
+}
+
+.menu-central mat-icon {
+    color: #ff6969;
+  }
+  
+.card-container {
+    padding: 5px;
+    cursor: pointer;
+}
+  
+
+.b-portfolio{
+    padding-bottom: 2em;
+}
+
+
+// mat-card {
+//     width: 90%;
+//     height: 90%;
+// }
+
+#fact{
+    background: url(../../assets/img/fact.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    height: 25em;
+}
+
+.btn-details{
+    width: 132px;
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+    background-color: #ff6969;
+    color: #ffffff;
+}

@@ -1,0 +1,57 @@
+.header-img{
+    background-image: url("../../assets/img/home.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    background-position:top; /* centraliza apenas o background - para não cortar */   
+    height: 70vw; /* defina a largura da imagem */
+    width: 100vw; /* defina a altura da imagem */
+    opacity:0.9;
+}
+
+.t-1{
+    font-size: 19vw; 
+    text-shadow: rgba(0, 0, 0, 0.334) 2px 1px 4px;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    color: #fff;
+    // src: url('../../assets/font/Keqima.ttf'); /* IE9 Compat Modes */
+}
+
+.t-img{
+    margin-top: 8px;
+    width: 9vw;
+}
+
+.t-2{
+    // text-shadow: #fff 1px 2px 1px;
+    text-shadow: rgba(0, 0, 0, 0.334) 2px 1px 4px;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-size: 5.6vw;
+    //color: #FFF;
+    color: #c64932;
+    // src: url('../../assets/font/Keqima.ttf'); /* IE9 Compat Modes */
+}
+
+.t-3{
+    font-size: 4vw;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    color: #ffffff;
+    // src: url('../../assets/font/Keqima.ttf'); /* IE9 Compat Modes */
+}
+
+.hr {
+    width: 90%;
+	border: 0;
+    height: 3px;
+    margin-block-start: 8%;
+    margin-block-end: 8%;
+    background-image: linear-gradient(to right, transparent, #ffffff, transparent); 
+}
+
+.t-logo{
+    
+}
+
