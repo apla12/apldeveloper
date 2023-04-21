@@ -4,11 +4,8 @@
   background-size    : 100%;
   background-size    : cover;
   background-position: top;
-  /* centraliza apenas o background - para não cortar */
   height             : 70vw;
-  /* defina a largura da imagem */
   width              : 100vw;
-  /* defina a altura da imagem */
   opacity            : 0.9;
 }
 
@@ -19,34 +16,6 @@
   padding-top    : 10vw;
 }
 
-.t-1 {
-  font-size  : clamp(10em, 19em + 19vw, 19vw);
-  text-shadow: rgba(0, 0, 0, 0.334) 2px 1px 4px;
-  font-family: 'Comfortaa';
-  font-style : normal;
-  color      : #fff;
-}
-
-.t-2 {
-  text-shadow: rgba(0, 0, 0, 0.334) 2px 1px 4px;
-  font-family: 'Comfortaa';
-  font-style : normal;
-  font-size  : 5.6vw;
-  color      : #c64932;
-}
-
-.t-3 {
-  font-size  : 4vw;
-  font-family: 'Comfortaa';
-  font-style : normal;
-  color      : #ffffff;
-}
-
-.hr {
-  width             : 90%;
-  border            : 0;
-  height            : 3px;
-  margin-block-start: 8%;
-  margin-block-end  : 8%;
-  background-image  : linear-gradient(to right, transparent, #ffffff, transparent);
+.t-img{
+  width: 100vw;
 }
