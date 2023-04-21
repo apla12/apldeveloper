@@ -1,31 +1,37 @@
-  <mat-toolbar fxLayout="row" class="menu-fundo">
 
-    <span fxFlex>
-      <button mat-icon-button class="icon" > <!-- fxShow="true" -->
-        <img src="../../assets/img/eua.jpg" class="btn-width">
-      </button>
-      <button mat-icon-button class="icon">  <!-- fxShow="true" -->
-        <img src="../../assets/img/brazil.jpg" class="btn-width">
-      </button>
-    </span>
+<ng-container>
+<mat-toolbar class="menu-fundo">
 
-    <!-- <button mat-button *ngFor="let item of menuItems" [fxShow]="item.showOnDesktop" [fxShow.xs]="item.showOnMobile"
-      [fxShow.sm]="item.showOnTablet">
-      {{item.label}}
-    </button> -->
+  <button mat-icon-button class="icon">
+    <img src="../../assets/img/eua.jpg" class="btn-width" />
+  </button>
+  <button mat-icon-button class="icon">
+    <img src="../../assets/img/brazil.jpg" class="btn-width" />
+  </button>
 
-    <button mat-icon-button [matMenuTriggerFor]="dropMenu">
-      <mat-icon aria-hidden="false" fontIcon="menu"></mat-icon>
+  <!-- MENU WEB -->
+  <div class="items-menu" *ngIf="!viewMenu" >
+    <button mat-button *ngFor="let item of menuItems">
+      {{ item.label }}
+    </button>
+  </div>
+
+  <!-- MENU MOBILE -->
+  <div class="items-menu" *ngIf="viewMenu">
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
     </button>
 
-    <mat-menu #dropMenu="matMenu">
+    <mat-menu #menu="matMenu">
       <ng-container *ngFor="let item of menuItems">
-        <!-- <div [fxShow]="!item.showOnDesktop" [fxShow.sm]="!item.showOnTablet" [fxShow.xs]="!item.showOnMobile">
+        <div>
           <button mat-menu-item>
-            {{item.label}}
+            {{ item.label }}
           </button>
-        </div> -->
+        </div>
       </ng-container>
     </mat-menu>
+  </div>
+</mat-toolbar>
 
-  </mat-toolbar>
+</ng-container>

@@ -1,0 +1,62 @@
+[debug] [2023-04-21T09:46:41.842Z] ----------------------------------------------------------------------
+[debug] [2023-04-21T09:46:41.842Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2023-04-21T09:46:41.843Z] CLI Version:   11.28.0
+[debug] [2023-04-21T09:46:41.843Z] Platform:      darwin
+[debug] [2023-04-21T09:46:41.843Z] Node Version:  v18.15.0
+[debug] [2023-04-21T09:46:41.846Z] Time:          Fri Apr 21 2023 10:46:41 GMT+0100 (Western European Summer Time)
+[debug] [2023-04-21T09:46:41.846Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-21T09:46:41.877Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-21T09:46:41.877Z] > authorizing via signed-in user (anapaulalopes12@gmail.com)
+[debug] [2023-04-21T09:46:41.877Z] [iam] checking project apldeveloper-fbe4c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-04-21T09:46:41.878Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/apldeveloper-fbe4c:testIamPermissions [none]
+[debug] [2023-04-21T09:46:41.878Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/apldeveloper-fbe4c:testIamPermissions x-goog-quota-user=projects/apldeveloper-fbe4c
+[debug] [2023-04-21T09:46:41.878Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/apldeveloper-fbe4c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-21T09:46:42.607Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/apldeveloper-fbe4c:testIamPermissions 200
+[debug] [2023-04-21T09:46:42.607Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/apldeveloper-fbe4c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-21T09:46:42.608Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/apldeveloper-fbe4c [none]
+[debug] [2023-04-21T09:46:43.003Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/apldeveloper-fbe4c 200
+[debug] [2023-04-21T09:46:43.004Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/apldeveloper-fbe4c {"projectId":"apldeveloper-fbe4c","projectNumber":"47021590101","displayName":"apldeveloper","name":"projects/apldeveloper-fbe4c","resources":{"hostingSite":"apldeveloper-fbe4c"},"state":"ACTIVE","etag":"1_6eebd8d5-32ec-4d20-9f15-7ec2ee61a07f"}
+[debug] [2023-04-21T09:46:44.403Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/apldeveloper-fbe4c/sites pageToken=&pageSize=10
+[debug] [2023-04-21T09:46:45.334Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/apldeveloper-fbe4c/sites 200
+[debug] [2023-04-21T09:46:45.335Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/apldeveloper-fbe4c/sites {"sites":[{"name":"projects/apldeveloper-fbe4c/sites/apldeveloper-fbe4c","defaultUrl":"https://apldeveloper-fbe4c.web.app","appId":"1:47021590101:web:6672d65e2e59859c5af6dc","type":"DEFAULT_SITE"}]}
+[debug] [2023-04-21T09:46:45.335Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:47021590101:web:6672d65e2e59859c5af6dc/config [none]
+[debug] [2023-04-21T09:46:46.184Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:47021590101:web:6672d65e2e59859c5af6dc/config 200
+[debug] [2023-04-21T09:46:46.185Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:47021590101:web:6672d65e2e59859c5af6dc/config {"projectId":"apldeveloper-fbe4c","appId":"1:47021590101:web:6672d65e2e59859c5af6dc","storageBucket":"apldeveloper-fbe4c.appspot.com","apiKey":"AIzaSyCf0hR0yXiRR9zdzZZ7v3-b7wiQkZgYtw4","authDomain":"apldeveloper-fbe4c.firebaseapp.com","messagingSenderId":"47021590101","measurementId":"G-5Z3YG6NND4"}
+[debug] [2023-04-21T09:46:57.469Z] Error
+    at scheduleTarget (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/angular/index.js:51:19)
+    at async build (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/angular/index.js:64:9)
+    at async prepareFrameworks (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/index.js:279:108)
+    at async deploy (/usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-04-21T13:44:15.284Z] ----------------------------------------------------------------------
+[debug] [2023-04-21T13:44:15.285Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2023-04-21T13:44:15.285Z] CLI Version:   11.28.0
+[debug] [2023-04-21T13:44:15.285Z] Platform:      darwin
+[debug] [2023-04-21T13:44:15.285Z] Node Version:  v18.15.0
+[debug] [2023-04-21T13:44:15.288Z] Time:          Fri Apr 21 2023 14:44:15 GMT+0100 (Western European Summer Time)
+[debug] [2023-04-21T13:44:15.288Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-21T13:44:15.319Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-21T13:44:15.319Z] > authorizing via signed-in user (anapaulalopes12@gmail.com)
+[debug] [2023-04-21T13:44:15.319Z] [iam] checking project apldeveloper-fbe4c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-04-21T13:44:15.320Z] > refreshing access token with scopes: []
+[debug] [2023-04-21T13:44:15.321Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-04-21T13:44:15.321Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-04-21T13:44:15.487Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-04-21T13:44:15.488Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-04-21T13:44:15.495Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/apldeveloper-fbe4c:testIamPermissions [none]
+[debug] [2023-04-21T13:44:15.495Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/apldeveloper-fbe4c:testIamPermissions x-goog-quota-user=projects/apldeveloper-fbe4c
+[debug] [2023-04-21T13:44:15.495Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/apldeveloper-fbe4c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-21T13:44:16.269Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/apldeveloper-fbe4c:testIamPermissions 200
+[debug] [2023-04-21T13:44:16.269Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/apldeveloper-fbe4c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-21T13:44:16.271Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/apldeveloper-fbe4c [none]
+[debug] [2023-04-21T13:44:16.567Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/apldeveloper-fbe4c 200
+[debug] [2023-04-21T13:44:16.567Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/apldeveloper-fbe4c {"projectId":"apldeveloper-fbe4c","projectNumber":"47021590101","displayName":"apldeveloper","name":"projects/apldeveloper-fbe4c","resources":{"hostingSite":"apldeveloper-fbe4c"},"state":"ACTIVE","etag":"1_6eebd8d5-32ec-4d20-9f15-7ec2ee61a07f"}
+[debug] [2023-04-21T13:44:18.016Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/apldeveloper-fbe4c/sites pageToken=&pageSize=10
+[debug] [2023-04-21T13:44:19.055Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/apldeveloper-fbe4c/sites 200
+[debug] [2023-04-21T13:44:19.055Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/apldeveloper-fbe4c/sites {"sites":[{"name":"projects/apldeveloper-fbe4c/sites/apldeveloper-fbe4c","defaultUrl":"https://apldeveloper-fbe4c.web.app","appId":"1:47021590101:web:6672d65e2e59859c5af6dc","type":"DEFAULT_SITE"}]}
+[debug] [2023-04-21T13:44:19.056Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:47021590101:web:6672d65e2e59859c5af6dc/config [none]
+[debug] [2023-04-21T13:44:20.071Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:47021590101:web:6672d65e2e59859c5af6dc/config 200
+[debug] [2023-04-21T13:44:20.072Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:47021590101:web:6672d65e2e59859c5af6dc/config {"projectId":"apldeveloper-fbe4c","appId":"1:47021590101:web:6672d65e2e59859c5af6dc","storageBucket":"apldeveloper-fbe4c.appspot.com","apiKey":"AIzaSyCf0hR0yXiRR9zdzZZ7v3-b7wiQkZgYtw4","authDomain":"apldeveloper-fbe4c.firebaseapp.com","messagingSenderId":"47021590101","measurementId":"G-5Z3YG6NND4"}

@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { BreakpointObserver } from '@angular/cdk/layout';
+import { Component } from '@angular/core';
 import { MenuItem } from './menuItem';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss']
+  styleUrls: ['./menu.component.scss'],
 })
-export class MenuComponent implements OnInit {
-
+export class MenuComponent {
 
   menuItems: MenuItem[] = [
     {
@@ -16,8 +16,7 @@ export class MenuComponent implements OnInit {
       showOnMobile: false,
       showOnTablet: false,
       showOnDesktop: true,
-      menuMobi:false
-
+      menuMobi: false,
     },
     {
       label: 'About',
@@ -25,8 +24,7 @@ export class MenuComponent implements OnInit {
       showOnMobile: false,
       showOnTablet: false,
       showOnDesktop: true,
-      menuMobi:false
-
+      menuMobi: false,
     },
     {
       label: 'Skills',
@@ -34,8 +32,7 @@ export class MenuComponent implements OnInit {
       showOnMobile: false,
       showOnTablet: false,
       showOnDesktop: true,
-      menuMobi:false
-
+      menuMobi: false,
     },
     {
       label: 'Portfolio',
@@ -43,8 +40,7 @@ export class MenuComponent implements OnInit {
       showOnMobile: false,
       showOnTablet: false,
       showOnDesktop: true,
-      menuMobi:false
-
+      menuMobi: false,
     },
     {
       label: 'Contact',
@@ -52,14 +48,19 @@ export class MenuComponent implements OnInit {
       showOnMobile: false,
       showOnTablet: false,
       showOnDesktop: true,
-      menuMobi:false
-
+      menuMobi: false,
     },
   ];
 
-  constructor() { }
+  viewMenu: Boolean = false;
 
-  ngOnInit(): void {
+  constructor(private observer: BreakpointObserver) {}
+
+  ngAfterViewInit() {
+    this.observer.observe(['(max-width: 800px)']).subscribe((res) => {
+      if (res.matches) {
+        this.viewMenu = true;
+      }
+    });
   }
-
 }

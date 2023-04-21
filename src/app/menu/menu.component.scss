@@ -1,14 +1,24 @@
-.btn-width{
-  width: 30px;
+.btn-width {
+  width : 30px;
   height: 19px;
 }
 
-.menu-fundo{
+.menu-fundo {
   background-color: #212121;
-  color:#fff;
+  color           : #fff;
 }
 
 .menu-spacer {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
+
+.items-language {
+  // text-align: left;
+}
+
+.items-menu {
+  text-align: right;
+  width     : 100%;
+}
+
 
