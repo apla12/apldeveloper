@@ -1,37 +1,34 @@
-
 <ng-container>
-<mat-toolbar class="menu-fundo">
-
-  <button mat-icon-button class="icon">
-    <img src="../../assets/img/eua.jpg" class="btn-width" />
-  </button>
-  <button mat-icon-button class="icon">
-    <img src="../../assets/img/brazil.jpg" class="btn-width" />
-  </button>
-
-  <!-- MENU WEB -->
-  <div class="items-menu" *ngIf="!viewMenu" >
-    <button mat-button *ngFor="let item of menuItems">
-      {{ item.label }}
+  <mat-toolbar class="menu-fundo container">
+    <button mat-icon-button class="icon">
+      <img src="../../assets/img/eua.jpg" class="btn-width" />
     </button>
-  </div>
-
-  <!-- MENU MOBILE -->
-  <div class="items-menu" *ngIf="viewMenu">
-    <button mat-icon-button [matMenuTriggerFor]="menu">
-      <mat-icon>menu</mat-icon>
+    <button mat-icon-button class="icon">
+      <img src="../../assets/img/brazil.jpg" class="btn-width" />
     </button>
 
-    <mat-menu #menu="matMenu">
-      <ng-container *ngFor="let item of menuItems">
-        <div>
-          <button mat-menu-item>
-            {{ item.label }}
-          </button>
-        </div>
-      </ng-container>
-    </mat-menu>
-  </div>
-</mat-toolbar>
+    <!-- MENU WEB -->
+    <div class="items-menu" *ngIf="!viewMenu">
+      <button mat-button *ngFor="let item of menuItems">
+        {{ item.label }}
+      </button>
+    </div>
 
+    <!-- MENU MOBILE -->
+    <div class="items-menu" *ngIf="viewMenu">
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <mat-menu #menu="matMenu">
+        <ng-container *ngFor="let item of menuItems">
+          <div>
+            <button mat-menu-item>
+              {{ item.label }}
+            </button>
+          </div>
+        </ng-container>
+      </mat-menu>
+    </div>
+  </mat-toolbar>
 </ng-container>

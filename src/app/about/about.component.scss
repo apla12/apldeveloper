@@ -1,47 +1,59 @@
-.body{
-    height: auto;
-    width: 100vw;
-    padding-bottom: 2em;
-    padding-top: 2em;
+.card {
+  width       : 100vw;
+  //text-align: center;
 }
 
-.titulo{
-    font-size: 2.5em;
-    font-family: 'Comfortaa';
-    text-align: center;
-    margin-top: 1em;
-    // margin-bottom: 1em;
+.card-title {
+  width     : 100vw;
+  text-align: center;
+}
+
+.mat-mdc-card-header {
+  display: inline-block;
+  padding: 15px 15px 0;
 }
 
 hr {
-    width: 20%;
-	border: 0;
-    height: 2px;
-    margin-bottom: 1em;
-    background-image: linear-gradient(to right, transparent, rgb(82, 81, 81), transparent); 
+  text-align      : center;
+  width           : 30vw;
+  border          : 0;
+  height          : 2px;
+  margin-bottom   : 1em;
+  background-image: linear-gradient(to right, transparent, rgb(82, 81, 81), transparent);
 }
 
-.aling-text{
-    text-align: center;
+.card-content {
+  display: inline-block;
 }
 
-.img-about{
-    margin-left: 10px;
-    margin-right: 10px;
-    display: block;
-    max-width: 100%;
-    height: auto;
+.first {
+  width       : 50%;
+  display     : inline-block;
+  //border    : 1px solid black;
+  text-align  : center;
 }
 
-
-.p-about{
-    font-size: 14px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    //margin-top: 2em;
-    margin-left: 4em;
-    margin-right: 4em;
+.second {
+  width  : 50%;
+  display: inline-block;
 }
-.d-card{
-    margin-top: 20px;
-    width: 90%;
+
+.presentation {
+  font-size  : large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align : justify;
+  line-height: 20px;
+  padding-right: 100px;
+}
+
+@media screen and (max-width: 963px) {
+
+  .first,
+  .second {
+    width: 100%;
+  }
+
+  .presentation {
+    padding: 15px 15px 15px;
+  }
 }
