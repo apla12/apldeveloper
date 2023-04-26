@@ -1,20 +1,18 @@
-<mat-card class="card">
-  <mat-card-header>
-    <mat-card-title class="card-title">About me</mat-card-title>
-    <mat-card-subtitle><hr /></mat-card-subtitle>
-  </mat-card-header>
+<ng-container>
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title class="card-title">About me</mat-card-title>
+      <mat-card-subtitle><hr /></mat-card-subtitle>
+    </mat-card-header>
 
-  <mat-card-content class="card-content">
-    <div class="first">
-      <img src="../../assets/img/about.png" alt="" class="img" />
-    </div>
+    <mat-card-content class="card-content">
+      <div class="first">
+        <img src="../../assets/img/about.png" alt="" class="img" />
+      </div>
 
-    <div class="second">
-      <span class="presentation">
-        Hi, my name is Ana Paula Lopes Araújo. I am a web / full stack
-        developer. I have 13 years of experience in the field, always working
-        with the best practices and consecrated frameworks.
-      </span>
-    </div>
-  </mat-card-content>
-</mat-card>
+      <div class="second">
+        <span class="presentation"> {{ txtAbout }} </span>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</ng-container>

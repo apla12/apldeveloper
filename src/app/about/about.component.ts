@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent {
+  txtAbout: any =
+    'Hi, my name is Ana Paula Lopes Araújo. I am a web / full stack developer. I have 13 years of experience in the field, always working with the best practices and consecrated frameworks.';
+
   viewMenu: Boolean = false;
 
   constructor(private breakpointObserver: BreakpointObserver) {
