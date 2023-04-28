@@ -1,215 +1,142 @@
-<div class="body">
-    <div class=" row titulo">
-        <!-- <hr> -->
-        Skills
-        <hr>
+<mat-card class="card">
+  <mat-card-header class="div-header">
+    <mat-card-title class="card-title">Skills</mat-card-title>
+    <mat-card-subtitle><hr /></mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div class="div-content-geral">
+      <div class="first">
+        <img src="../../assets/img/skill.jpg" alt="skill" class="img-skill" />
+      </div>
+
+      <div class="second">
+        <mat-accordion>
+          <mat-expansion-panel
+            (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false"
+          >
+            <mat-expansion-panel-header>
+              <mat-panel-title> Back-end </mat-panel-title>
+              <mat-panel-description class="txt-more-details">
+                more details
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <div class="progress-bar" *ngFor="let item of frames">
+              <h5>{{ item.name }}:</h5>
+              <mat-progress-bar
+                color="accent"
+                mode="buffer"
+                value="{{ item.value }}"
+                bufferValue="50"
+                class="progress-bar-item"
+              ></mat-progress-bar>
+            </div>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel
+            (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false"
+          >
+            <mat-expansion-panel-header>
+              <mat-panel-title> Front-end </mat-panel-title>
+              <mat-panel-description class="txt-more-details">
+                more details
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <div class="progress-bar" *ngFor="let item of webs">
+              <h5>{{ item.name }}:</h5>
+              <mat-progress-bar
+                color="accent"
+                mode="buffer"
+                value="{{ item.value }}"
+                bufferValue="50"
+                class="progress-bar-item"
+              ></mat-progress-bar>
+            </div>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel
+            (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false"
+          >
+            <mat-expansion-panel-header>
+              <mat-panel-title> Database </mat-panel-title>
+              <mat-panel-description class="txt-more-details">
+                more details
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <div class="progress-bar" *ngFor="let item of databases">
+              <h5>{{ item.name }}:</h5>
+              <mat-progress-bar
+                color="accent"
+                mode="buffer"
+                value="{{ item.value }}"
+                bufferValue="50"
+                class="progress-bar-item"
+              ></mat-progress-bar>
+            </div>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel
+            (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false"
+          >
+            <mat-expansion-panel-header>
+              <mat-panel-title> Server </mat-panel-title>
+              <mat-panel-description class="txt-more-details">
+                more details
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <div class="progress-bar" *ngFor="let item of servers">
+              <h5>{{ item.name }}:</h5>
+              <mat-progress-bar
+                color="accent"
+                mode="buffer"
+                value="{{ item.value }}"
+                bufferValue="50"
+                class="progress-bar-item"
+              ></mat-progress-bar>
+            </div>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel
+            (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false"
+          >
+            <mat-expansion-panel-header>
+              <mat-panel-title> Integration Server </mat-panel-title>
+              <mat-panel-description class="txt-more-details">
+                more details
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <div class="progress-bar" *ngFor="let item of integrationServer">
+              <h5>{{ item.name }}:</h5>
+              <mat-progress-bar
+                color="accent"
+                mode="buffer"
+                value="{{ item.value }}"
+                bufferValue="50"
+                class="progress-bar-item"
+              ></mat-progress-bar>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </div>
     </div>
-    <div fxLayout="row" fxLayout.xs="column" fxFlexFill>
-        <div fxFlex="50" fxFlex.xs="100" fxLayoutAlign.xs="center" fxLayoutAlign="center start">
-            <img src="../../assets/img/skill.jpg" alt="skills" fxFlex.xs="90">
-        </div>
-        <div fxFlex="48" fxFlex.xs="100" style="margin-top: 20px;margin-left: 20px;">
-            <label>Java EE</label>
-            <mat-progress-bar color="accent" mode="buffer" value=70 bufferValue=50 style="width: 95%;">
-            </mat-progress-bar>
-            <label>Database</label>
-            <mat-progress-bar color="accent" mode="buffer" value=40 bufferValue=50 style="width: 95%;">
-            </mat-progress-bar>
-            <label>Web developer</label>
-            <mat-progress-bar color="accent" mode="buffer" value=60 bufferValue=50 style="width: 95%;">
-            </mat-progress-bar>
-        </div>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="card-language">
+  <mat-card-content>
+    <div class="div-geral">
+      <div class="div-card">
+        <span class="t-title">Language</span>
+      </div>
+
+      <div class="div-card">
+        <span class="t-title">Education | Training</span>
+      </div>
     </div>
-    <!-- <hr class="hr-div"> -->
-    <div class="b-skills" fxLayout="column-reverse" fxLayout.gt-sm="row wrap" fxLayoutAlign="space-evenly start">
-        <div fxFlex="100" fxFlex.gt-sm="90" fxLayout="row wrap" fxLayoutAlign="center stretch" class="menu-central">
-
-            <div fxFlex="100" fxFlex.gt-sm="50" class="card-container" fxLayoutAlign="center start">
-                <mat-card class="mat-elevation-z8">
-                    <div fxLayout="row" fxLayoutAlign="center start">
-                        <img src="../../assets/img/t1.jpg" class="t-img mat-elevation-z8" alt="Languages">
-                    </div>
-                    <mat-card-header fxLayoutAlign="center start">
-                        <mat-card-title class="t-title">Languages</mat-card-title>
-                    </mat-card-header>
-                    <mat-card-content class="t-cont">
-                        <div class="b-skills" fxLayout="column-reverse" fxLayout.gt-sm="row wrap"
-                            fxLayoutAlign="space-between start">
-                            <div fxFlex="100" fxFlex.gt-sm="100" fxLayout="row wrap" fxLayoutAlign="center stretch"
-                                class="menu-central">
-                                <div fxFlex="100" fxFlex.gt-sm="31" class="card-container">
-                                    <span>Portuguese - Br</span>
-                                    <mat-list role="list">
-                                        <mat-list-item class="s-list" role="listitem">
-                                            <mat-icon style="font-size: 17px;">keyboard_voice</mat-icon>Fluency: Native
-                                        </mat-list-item>
-                                        <mat-list-item class="s-list" role="listitem">
-                                            <mat-icon style="font-size: 17px;">edit</mat-icon>Writing: Native
-                                        </mat-list-item>
-                                        <mat-list-item class="s-list" role="listitem">
-                                            <mat-icon style="font-size: 17px;">chrome_reader_mode</mat-icon> Reading:
-                                            Native
-                                        </mat-list-item>
-                                    </mat-list>
-                                </div>
-                                <div fxFlex="100" fxFlex.gt-sm="34" class="card-container">
-                                    <span>English</span>
-                                    <mat-list role="list">
-                                        <mat-list-item class="s-list" role="listitem">
-                                            <mat-icon style="font-size: 17px;">keyboard_voice</mat-icon>Fluency: Basic
-                                        </mat-list-item>
-                                        <mat-list-item class="s-list" role="listitem">
-                                            <mat-icon style="font-size: 17px;">edit</mat-icon>Writing: Intermediate
-                                        </mat-list-item>
-                                        <mat-list-item class="s-list" role="listitem">
-                                            <mat-icon style="font-size: 17px;">chrome_reader_mode</mat-icon>Reading:
-                                            Intermediate
-                                        </mat-list-item>
-                                    </mat-list>
-                                </div>
-                                <div fxFlex="100" fxFlex.gt-sm="34" class="card-container">
-                                    <span>Spanish</span>
-                                    <mat-list role="list">
-                                        <mat-list-item class="s-list" role="listitem">
-                                            <mat-icon style="font-size: 17px;">keyboard_voice</mat-icon>Fluency:
-                                            Intermediate
-                                        </mat-list-item>
-                                        <mat-list-item class="s-list" role="listitem">
-                                            <mat-icon style="font-size: 17px;">edit</mat-icon>Writing: Intermediate
-                                        </mat-list-item>
-                                        <mat-list-item class="s-list" role="listitem">
-                                            <mat-icon style="font-size: 17px;">chrome_reader_mode</mat-icon>Reading:
-                                            Intermediate
-                                        </mat-list-item>
-                                    </mat-list>
-                                </div>
-                            </div>
-                        </div>
-                    </mat-card-content>
-                </mat-card>
-            </div>
-
-            <div fxFlex="100" fxFlex.gt-sm="50" class="card-container" fxLayoutAlign="center start">
-                <mat-card class="mat-elevation-z8">
-                    <div fxLayout="row" fxLayoutAlign="center start">
-                        <img src="../../assets/img/t2.jpg" class="t-img mat-elevation-z8" alt="">
-                    </div>
-                    <mat-card-header fxLayoutAlign="center start">
-                        <mat-card-title class="t-title">Educational Background</mat-card-title>
-                    </mat-card-header>
-                    <mat-card-content class="t-cont">
-                        <div class="f-cards">
-                            <span fxLayout="row" style="font-size: 15px;"><em>
-                                    <mat-icon style="font-size: 17px;">account_balance</mat-icon>Postgraduate studies
-                                </em></span>
-                            <span style="font-size: 13px;">
-                                Course: Development of systems in java<br>
-                                Institution: Unyleya of Brazil - Brazil / DF - 08/2020
-                            </span>
-                        </div>
-                        <br>
-                        <mat-divider style="margin-left: 5%; margin-right: 5%; width: 90%;"></mat-divider>
-                        <br>
-                        <div class="f-cards">
-                            <span fxLayout="row" style="font-size: 15px;"><em>
-                                    <mat-icon style="font-size: 17px;">account_balance</mat-icon>University graduate
-                                </em></span>
-                            <span style="font-size: 13px;">
-                                Course: Analysis and systems development<br>
-                                Institution: UCB Catholic University of Brazil - Brazil / DF - 12/2016
-                            </span>
-                        </div>
-                        <br>
-                        <mat-divider style="margin-left: 5%; margin-right: 5%; width: 90%;"></mat-divider>
-                        <br>
-                    </mat-card-content>
-                </mat-card>
-            </div>
-
-            <!-- AQUI 4 -->
-
-            <div fxFlex="100" fxFlex.gt-sm="25" class="card-container">
-                <mat-card class="mat-elevation-z8">
-                    <div fxLayout="row" fxLayoutAlign="center start">
-                        <img src="../../assets/img/t3.jpg" class="t-img mat-elevation-z8" alt="">
-                    </div>
-                    <mat-card-header fxLayoutAlign="center start">
-                        <mat-card-title class="t-title">Frameworks</mat-card-title>
-                    </mat-card-header>
-                    <mat-card-content class="t-cont card-skills" style="margin-top: 1.5em;">
-                        <!-- <mat-chip-list class="chip" cdkDropList cdkDropListOrientation="horizontal"
-                            (cdkDropListDropped)="dropFrame($event)">
-                            <mat-chip class="example-box" cdkDrag *ngFor="let frame of frames">
-                                {{frame.name}}
-                            </mat-chip>
-                        </mat-chip-list> -->
-                    </mat-card-content>
-                </mat-card>
-            </div>
-
-            <div fxFlex="100" fxFlex.gt-sm="25" class="card-container card-skills">
-                <mat-card class="mat-elevation-z8">
-                    <div fxLayout="row" fxLayoutAlign="center start">
-                        <img src="../../assets/img/t4.jpg" class="t-img mat-elevation-z8" alt="">
-                    </div>
-                    <mat-card-header fxLayoutAlign="center start">
-                        <mat-card-title class="t-title">Database</mat-card-title>
-                    </mat-card-header>
-                    <mat-card-content class="t-cont card-skills" style="margin-top: 1.5em;">
-                        <div fxLayoutAlign="center center">
-                            <!-- <mat-chip-list class="chip" cdkDropList cdkDropListOrientation="horizontal"
-                                (cdkDropListDropped)="dropDataBase($event)">
-                                <mat-chip class="example-box " cdkDrag *ngFor="let db of databases">
-                                    {{db.name}}
-                                </mat-chip>
-                            </mat-chip-list> -->
-                        </div>
-                    </mat-card-content>
-                </mat-card>
-            </div>
-
-            <div fxFlex="100" fxFlex.gt-sm="25" class="card-container card-skills">
-                <mat-card class="mat-elevation-z8">
-                    <div fxLayout="row" fxLayoutAlign="center start">
-                        <img src="../../assets/img/t5.jpg" class="t-img mat-elevation-z8" alt="">
-                    </div>
-                    <mat-card-header fxLayoutAlign="center start">
-                        <mat-card-title class="t-title">Server</mat-card-title>
-                    </mat-card-header>
-                    <mat-card-content class="t-cont card-skills" style="margin-top: 1.5em;">
-                        <!-- <mat-chip-list class="chip" cdkDropList cdkDropListOrientation="horizontal"
-                            (cdkDropListDropped)="dropServer($event)">
-                            <mat-chip class="example-box" cdkDrag *ngFor="let serve of servers">
-                                {{serve.name}}
-                            </mat-chip>
-                        </mat-chip-list> -->
-                    </mat-card-content>
-                </mat-card>
-            </div>
-
-            <div fxFlex="100" fxFlex.gt-sm="25" class="card-container card-skills">
-                <mat-card class="mat-elevation-z8">
-                    <div fxLayout="row" fxLayoutAlign="center start">
-                        <img src="../../assets/img/t6-1.png" class="t-img mat-elevation-z8" alt="">
-                    </div>
-                    <mat-card-header fxLayoutAlign="center start">
-                        <mat-card-title class="t-title">Web</mat-card-title>
-                    </mat-card-header>
-                    <mat-card-content class="t-cont card-skills" style="margin-top: 1.5em;">
-                        <!-- <mat-chip-list class="chip" cdkDropList cdkDropListOrientation="horizontal"
-                            (cdkDropListDropped)="dropWeb($event)">
-                            <mat-chip class="example-box" cdkDrag *ngFor="let web of webs">
-                                {{web.name}}
-                            </mat-chip>
-                        </mat-chip-list> -->
-                    </mat-card-content>
-                </mat-card>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="quote" class="f-free" fxLayout="column" fxLayoutAlign="space-evenly center" >
-    <div class="f-text p-tit">Let’s work together!</div>
-    <div class="f-text p-subtit">I’m available for freelance project.</div>
-    <div><button mat-raised-button class="quote-btn" >Contact me</button></div>
-</div>
+  </mat-card-content>
+</mat-card>

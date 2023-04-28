@@ -1,7 +1,7 @@
-.card {
-  width     : 100vw;
-  text-align: center;
-}
+// .mat-mdc-card {
+//   box-shadow: none !important;
+//   --mdc-elevated-card-container-color: #fff;
+// }
 
 .card-title {
   width     : 100vw;
@@ -54,13 +54,12 @@ hr {
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
 
   .div-geral {
-    display        : flex;
+    display        : grid;
     flex-direction : column;
     box-sizing     : border-box;
     justify-content: center;
-    margin: 0 15% 0;
   }
 }
