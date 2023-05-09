@@ -10,7 +10,7 @@ export class AboutComponent {
   txtAbout: any =
     'Hi, my name is Ana Paula Lopes Araújo. I am a web / full stack developer. I have 13 years of experience in the field, always working with the best practices and consecrated frameworks.';
 
-  viewMenu: Boolean = false;
+  viewMenu = false;
 
   constructor(private breakpointObserver: BreakpointObserver) {
     this.breakpointObserver.observe(['(max-width: 800px)']).subscribe((res) => {
