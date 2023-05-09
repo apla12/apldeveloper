@@ -1,11 +1,8 @@
 .header-img {
   background-image   : url("../../assets/img/home.jpg");
   background-repeat  : no-repeat;
-  background-size    : 100vw;
   background-size    : cover;
   background-position: top;
-  height             : 70vw;
-  width              : 100vw;
   opacity            : 0.9;
 }
 
@@ -13,9 +10,9 @@
   display        : flex;
   align-items    : center;
   justify-content: center;
-  padding-top    : 10vw;
+  padding-top    : 6vw;
 }
 
-.t-img{
-  width: 100vw;
+.t-img {
+  width: 80vw;
 }
