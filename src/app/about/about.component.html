@@ -1,15 +1,21 @@
-<mat-card>
-  <mat-card-header>
-    <mat-card-title class="card-title">About me</mat-card-title>
-  </mat-card-header>
-  <hr />
-  <mat-card-content class="card-content">
+<section>
+  <div class="card-title">
+    <span>About me</span>
+    <hr />
+  </div>
+
+  <div class="card-content">
     <div class="first">
-      <img src="../../assets/img/about.png" alt="about" class="img" />
+      <span>
+        <img src="../../assets/img/skill.jpg" alt="about" class="img" />
+      </span>
     </div>
 
     <div class="second">
-      <span class="presentation"> {{ txtAbout }} </span>
+      <div class="card-txt">
+        <span class="presentation"> {{ txtAbout }} </span>
+        <img src="../../assets/img/r-corner.png" alt="" class="i-corner" />
+      </div>
     </div>
-  </mat-card-content>
-</mat-card>
+  </div>
+</section>

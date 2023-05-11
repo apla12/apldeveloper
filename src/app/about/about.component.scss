@@ -1,35 +1,61 @@
-.card-title {
-  width     : 100vw;
-  text-align: center;
+section {
+  display      : inline-block;
+  width        : 100vw;
+  position     : relative;
+  margin-bottom: 20px;
 }
 
-.mat-mdc-card-header {
-  display: inline-block;
-  padding: 0 0 0 0;
-  z-index: 999;
+.card-title {
+  font-size  : 36px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin     : 1em 0 0 3em;
+  position   : relative;
+  z-index    : 999;
+}
+
+.card-content {
+  display       : inline-block;
+  width         : 100vw;
+  vertical-align: top;
+}
+
+.card-content:before {
+  content         : "";
+  background-image: url(../../assets/img/dots-bg.svg);
+  display         : block;
+  height          : 37px;
+  left            : 6em;
+  top             : 15px;
+  position        : absolute;
+  width           : 37px;
+  z-index         : 99;
 }
 
 hr {
-  margin          : auto;
-  text-align      : center;
+  display         : block;
+  margin          : 15px -2px 0 0;
+  text-align      : left;
   width           : 50vw;
   border          : 0;
   height          : 2px;
   margin-bottom   : 1em;
-  background-image: linear-gradient(to right, transparent, #DCDCDC, transparent);
-  z-index: 999;
-}
-
-.card-content {
-  display: inline-block;
+  background-image: linear-gradient(to right, #DCDCDC, #DCDCDC, transparent);
 }
 
 .first {
-  width       : 50%;
-  display     : inline-block;
-  text-align  : right;
-  margin-right: 15px;
+  width         : 30%;
+  display       : inline-block;
+  text-align    : center;
+  margin-left   : 7px;
+  vertical-align: top;
+  margin-bottom : 15px;
+}
 
+.second {
+  width         : 69%;
+  display       : inline-block;
+  text-align    : left;
+  vertical-align: top;
 }
 
 .img:hover {
@@ -40,18 +66,26 @@ hr {
   width        : 20em;
   height       : 20em;
   border-radius: 37px;
-  box-shadow   : 34px 34px 67px #7d7d7d,
-    -34px -34px 67px #ffffff;
-  position  : relative;
-  transition: all .3s;
+  box-shadow   : 10px 10px 30px #7d7d7d, -10px -10px 30px #ffffff;
+  position     : relative;
+  transition   : all .3s;
 }
 
-.second {
-  width         : 20%;
-  display       : inline-block;
-  vertical-align: top;
-  text-align    : justify;
-  margin        : 45px;
+.card-txt {
+  width     : 70%;
+  height    : auto;
+  margin    : auto;
+  padding   : 1rem;
+  background: #f1f1f3;
+  box-shadow: 1px 0px 3px 1px rgb(220, 220, 220);
+}
+
+.i-corner {
+  display     : flex;
+  float       : right;
+  margin-top  : -59px;
+  margin-right: -45px;
+  width       : 130px;
 }
 
 .presentation {
@@ -62,7 +96,7 @@ hr {
   padding-right: 100px;
 }
 
-@media screen and (max-width: 963px) {
+@media screen and (max-width: 899px) {
 
   .first {
     text-align: center;
@@ -70,21 +104,57 @@ hr {
   }
 
   .second {
-    width: 80%;
-  }
-
-  .presentation {
+    text-align: center;
     width: 100%;
   }
 
+  .presentation {
+    width: 80%;
+  }
+
+  .card-content:before {
+    content         : "";
+    background-image: url(../../assets/img/dots-bg.svg);
+    display         : block;
+    height          : 37px;
+    left            : 4em;
+    top             : 24px;
+    position        : absolute;
+    width           : 37px;
+    z-index         : 99;
+  }
+
   hr {
-    margin          : auto;
-    text-align      : center;
+    text-align      : left;
     width           : 80vw;
     border          : 0;
     height          : 2px;
     margin-bottom   : 1em;
-    background-image: linear-gradient(to right, transparent, #DCDCDC, transparent);
-    z-index: 999;
+    background-image: linear-gradient(to right, #DCDCDC, #DCDCDC, transparent);
   }
+
+  .card-txt {
+    width     : 80%;
+    padding   : 1rem;
+    background: #f1f1f3;
+    box-shadow: 1px 0px 3px 1px rgb(220, 220, 220);
+  }
+
+  .card-title {
+    font-size  : 36px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin     : 45px 0px -15px 80px;
+    position   : relative;
+    z-index    : 999;
+  }
+
+  .i-corner {
+    display     : flex;
+    float       : right;
+    margin-top  : -103px;
+    margin-right: -34px;
+    width       : 160px;
+  }
+
+
 }

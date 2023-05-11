@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
   txtAbout: any =
-    'Hi, my name is Ana Paula Lopes Araújo. I am a web / full stack developer. I have 13 years of experience in the field, always working with the best practices and consecrated frameworks.';
+    'Developer of Java Web / full stack systems with more than 10 years of experience, providing services to several companies with clients in the financial and corporate areas.' +
+    'Among the main activities carried out are backend development with various java structures, such as: monolithic and microservices.';
 
   viewMenu = false;
 

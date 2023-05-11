@@ -1,142 +1,131 @@
-<mat-card class="card">
-  <mat-card-header class="div-header">
-    <mat-card-title class="card-title">Skills</mat-card-title>
-    <mat-card-subtitle><hr /></mat-card-subtitle>
-  </mat-card-header>
+<div class="div-content-geral">
 
-  <mat-card-content>
-    <div class="div-content-geral">
-      <div class="first">
-        <img src="../../assets/img/skill.jpg" alt="skill" class="img-skill" />
-      </div>
+  <div class="first">
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" >
+        <mat-expansion-panel-header>
+          <mat-panel-title> Back-end </mat-panel-title>
+          <mat-panel-description class="txt-more-details">more details</mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="progress-bar" *ngFor="let item of frames">
+          <h5>{{ item.name }}:</h5>
+          <mat-progress-bar color="accent" mode="buffer" value="{{ item.value }}" bufferValue="50"  class="progress-bar-item" ></mat-progress-bar>
+        </div>
+      </mat-expansion-panel>
 
-      <div class="second">
-        <mat-accordion>
-          <mat-expansion-panel
-            (opened)="panelOpenState = true"
-            (closed)="panelOpenState = false"
-          >
-            <mat-expansion-panel-header>
-              <mat-panel-title> Back-end </mat-panel-title>
-              <mat-panel-description class="txt-more-details">
-                more details
-              </mat-panel-description>
-            </mat-expansion-panel-header>
-            <div class="progress-bar" *ngFor="let item of frames">
-              <h5>{{ item.name }}:</h5>
-              <mat-progress-bar
-                color="accent"
-                mode="buffer"
-                value="{{ item.value }}"
-                bufferValue="50"
-                class="progress-bar-item"
-              ></mat-progress-bar>
-            </div>
-          </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title> Front-end </mat-panel-title>
+          <mat-panel-description class="txt-more-details"> more details </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="progress-bar" *ngFor="let item of webs">
+          <h5>{{ item.name }}:</h5>
+          <mat-progress-bar color="accent" mode="buffer" value="{{ item.value }}" bufferValue="50" class="progress-bar-item"></mat-progress-bar>
+        </div>
+      </mat-expansion-panel>
 
-          <mat-expansion-panel
-            (opened)="panelOpenState = true"
-            (closed)="panelOpenState = false"
-          >
-            <mat-expansion-panel-header>
-              <mat-panel-title> Front-end </mat-panel-title>
-              <mat-panel-description class="txt-more-details">
-                more details
-              </mat-panel-description>
-            </mat-expansion-panel-header>
-            <div class="progress-bar" *ngFor="let item of webs">
-              <h5>{{ item.name }}:</h5>
-              <mat-progress-bar
-                color="accent"
-                mode="buffer"
-                value="{{ item.value }}"
-                bufferValue="50"
-                class="progress-bar-item"
-              ></mat-progress-bar>
-            </div>
-          </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title> Database </mat-panel-title>
+          <mat-panel-description class="txt-more-details">more details</mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="progress-bar" *ngFor="let item of databases">
+          <h5>{{ item.name }}:</h5>
+          <mat-progress-bar color="accent" mode="buffer" value="{{ item.value }}" bufferValue="50" class="progress-bar-item"></mat-progress-bar>
+        </div>
+      </mat-expansion-panel>
 
-          <mat-expansion-panel
-            (opened)="panelOpenState = true"
-            (closed)="panelOpenState = false"
-          >
-            <mat-expansion-panel-header>
-              <mat-panel-title> Database </mat-panel-title>
-              <mat-panel-description class="txt-more-details">
-                more details
-              </mat-panel-description>
-            </mat-expansion-panel-header>
-            <div class="progress-bar" *ngFor="let item of databases">
-              <h5>{{ item.name }}:</h5>
-              <mat-progress-bar
-                color="accent"
-                mode="buffer"
-                value="{{ item.value }}"
-                bufferValue="50"
-                class="progress-bar-item"
-              ></mat-progress-bar>
-            </div>
-          </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title> Server </mat-panel-title>
+          <mat-panel-description class="txt-more-details"> more details </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="progress-bar" *ngFor="let item of servers">
+          <h5>{{ item.name }}:</h5>
+          <mat-progress-bar color="accent" mode="buffer" value="{{ item.value }}" bufferValue="50" class="progress-bar-item"></mat-progress-bar>
+        </div>
+      </mat-expansion-panel>
 
-          <mat-expansion-panel
-            (opened)="panelOpenState = true"
-            (closed)="panelOpenState = false"
-          >
-            <mat-expansion-panel-header>
-              <mat-panel-title> Server </mat-panel-title>
-              <mat-panel-description class="txt-more-details">
-                more details
-              </mat-panel-description>
-            </mat-expansion-panel-header>
-            <div class="progress-bar" *ngFor="let item of servers">
-              <h5>{{ item.name }}:</h5>
-              <mat-progress-bar
-                color="accent"
-                mode="buffer"
-                value="{{ item.value }}"
-                bufferValue="50"
-                class="progress-bar-item"
-              ></mat-progress-bar>
-            </div>
-          </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" >
+        <mat-expansion-panel-header>
+          <mat-panel-title> Integration Server </mat-panel-title>
+          <mat-panel-description class="txt-more-details"> more details </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="progress-bar" *ngFor="let item of integrationServer">
+          <h5>{{ item.name }}:</h5>
+          <mat-progress-bar color="accent" mode="buffer" value="{{ item.value }}" bufferValue="50" class="progress-bar-item" ></mat-progress-bar>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
 
-          <mat-expansion-panel
-            (opened)="panelOpenState = true"
-            (closed)="panelOpenState = false"
-          >
-            <mat-expansion-panel-header>
-              <mat-panel-title> Integration Server </mat-panel-title>
-              <mat-panel-description class="txt-more-details">
-                more details
-              </mat-panel-description>
-            </mat-expansion-panel-header>
-            <div class="progress-bar" *ngFor="let item of integrationServer">
-              <h5>{{ item.name }}:</h5>
-              <mat-progress-bar
-                color="accent"
-                mode="buffer"
-                value="{{ item.value }}"
-                bufferValue="50"
-                class="progress-bar-item"
-              ></mat-progress-bar>
-            </div>
-          </mat-expansion-panel>
-        </mat-accordion>
-      </div>
+  <div class="second">
+      <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title> Portuguese </mat-panel-title>
+            <mat-panel-description class="txt-more-details"> more details </mat-panel-description>
+          </mat-expansion-panel-header>
+          <div class="progress-bar" *ngFor="let item of languagePT">
+            <h5>{{ item.name }}:</h5>
+            <mat-progress-bar color="accent" mode="buffer" value="{{ item.value }}" bufferValue="50" class="progress-bar-item-language" ></mat-progress-bar>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+
+      <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" >
+          <mat-expansion-panel-header>
+            <mat-panel-title> English </mat-panel-title>
+            <mat-panel-description class="txt-more-details"> more details </mat-panel-description>
+          </mat-expansion-panel-header>
+          <div class="progress-bar" *ngFor="let item of languageEN">
+            <h5>{{ item.name }}:</h5>
+            <mat-progress-bar color="accent" mode="buffer" value="{{ item.value }}" bufferValue="50" class="progress-bar-item-language" ></mat-progress-bar>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+
+      <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"  >
+          <mat-expansion-panel-header>
+            <mat-panel-title> Spanish </mat-panel-title>
+            <mat-panel-description class="txt-more-details"> more details  </mat-panel-description>
+          </mat-expansion-panel-header>
+          <div class="progress-bar" *ngFor="let item of languageES">
+            <h5>{{ item.name }}:</h5>
+            <mat-progress-bar color="accent" mode="buffer" value="{{ item.value }}" bufferValue="50" class="progress-bar-item-language" ></mat-progress-bar>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
     </div>
-  </mat-card-content>
-</mat-card>
 
-<mat-card class="card-language">
-  <mat-card-content>
-    <div class="div-geral">
-      <div class="div-card">
-        <span class="t-title">Language</span>
-      </div>
+    <div class="thrid">
+      <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title> Portuguese </mat-panel-title>
+            <mat-panel-description class="txt-more-details"> more details </mat-panel-description>
+          </mat-expansion-panel-header>
+          <div class="progress-bar" *ngFor="let item of languagePT">
+            <h5>{{ item.name }}:</h5>
+            <mat-progress-bar color="accent" mode="buffer" value="{{ item.value }}" bufferValue="50" class="progress-bar-item-language" ></mat-progress-bar>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
 
-      <div class="div-card">
-        <span class="t-title">Education | Training</span>
-      </div>
+      <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" >
+          <mat-expansion-panel-header>
+            <mat-panel-title> English </mat-panel-title>
+            <mat-panel-description class="txt-more-details"> more details </mat-panel-description>
+          </mat-expansion-panel-header>
+          <div class="progress-bar" *ngFor="let item of languageEN">
+            <h5>{{ item.name }}:</h5>
+            <mat-progress-bar color="accent" mode="buffer" value="{{ item.value }}" bufferValue="50" class="progress-bar-item-language" ></mat-progress-bar>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
     </div>
-  </mat-card-content>
-</mat-card>
+
+</div>

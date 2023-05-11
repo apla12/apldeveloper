@@ -53,6 +53,24 @@ export class SkillsComponent implements OnInit {
     { name: 'Go - GoLang', value: 10 },
   ];
 
+  languagePT: any[] = [
+    { name: 'Reading', value: 100 },
+    { name: 'Writing', value: 100 },
+    { name: 'Speaking', value: 100 },
+  ];
+
+  languageEN: any[] = [
+    { name: 'Reading', value: 100 },
+    { name: 'Writing', value: 100 },
+    { name: 'Speaking', value: 100 },
+  ];
+
+  languageES: any[] = [
+    { name: 'Reading', value: 100 },
+    { name: 'Writing', value: 100 },
+    { name: 'Speaking', value: 100 },
+  ];
+
   constructor(public el: ElementRef) {}
 
   ngOnInit(): void {
