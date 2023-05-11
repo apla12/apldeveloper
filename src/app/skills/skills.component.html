@@ -104,12 +104,12 @@
       <mat-accordion>
         <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
           <mat-expansion-panel-header>
-            <mat-panel-title> Portuguese </mat-panel-title>
+            <mat-panel-title> Graduete </mat-panel-title>
             <mat-panel-description class="txt-more-details"> more details </mat-panel-description>
           </mat-expansion-panel-header>
-          <div class="progress-bar" *ngFor="let item of languagePT">
+          <div class="progress-bar" *ngFor="let item of graduate">
             <h5>{{ item.name }}:</h5>
-            <mat-progress-bar color="accent" mode="buffer" value="{{ item.value }}" bufferValue="50" class="progress-bar-item-language" ></mat-progress-bar>
+            <h5 class="item-c">{{ item.value }}"</h5>
           </div>
         </mat-expansion-panel>
       </mat-accordion>
@@ -117,12 +117,12 @@
       <mat-accordion>
         <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" >
           <mat-expansion-panel-header>
-            <mat-panel-title> English </mat-panel-title>
+            <mat-panel-title> Postgraduate </mat-panel-title>
             <mat-panel-description class="txt-more-details"> more details </mat-panel-description>
           </mat-expansion-panel-header>
-          <div class="progress-bar" *ngFor="let item of languageEN">
+          <div class="progress-bar" *ngFor="let item of postgraduate">
             <h5>{{ item.name }}:</h5>
-            <mat-progress-bar color="accent" mode="buffer" value="{{ item.value }}" bufferValue="50" class="progress-bar-item-language" ></mat-progress-bar>
+            <h5 class="item-c">{{ item.value }}"</h5>
           </div>
         </mat-expansion-panel>
       </mat-accordion>

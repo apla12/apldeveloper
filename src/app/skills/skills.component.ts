@@ -71,6 +71,18 @@ export class SkillsComponent implements OnInit {
     { name: 'Speaking', value: 100 },
   ];
 
+  graduate: any[] = [
+    { name: 'Institution', value: 'Catholic University of Brasilia, Brazil' },
+    { name: 'Degree', value: 'Systems Development with Java' },
+    { name: 'Date (Year)', value: '2012 - 2017' },
+  ];
+
+  postgraduate: any[] = [
+    { name: 'Institution', value: 'University Unyleya of Brasilia, Brazil' },
+    { name: 'Degree', value: 'Systems Development with Java' },
+    { name: 'Date (Year)', value: '2019 – 2020' },
+  ];
+
   constructor(public el: ElementRef) {}
 
   ngOnInit(): void {
