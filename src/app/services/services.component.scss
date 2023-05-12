@@ -1,8 +1,11 @@
 section {
-  display      : inline-block;
-  width        : 100vw;
-  position     : relative;
-  margin-bottom: 20px;
+  background-image   : url(../../assets/img/map.svg);
+  background-size    : 23%;
+  background-repeat  : no-repeat;
+  background-position: right;
+  display            : inline-block;
+  width              : 100vw;
+  position           : relative;
 }
 
 .card-title {
@@ -11,13 +14,6 @@ section {
   margin     : 1em 0 0 3em;
   position   : relative;
   z-index    : 999;
-}
-
-.card-content {
-  display       : inline-block;
-  width         : 100vw;
-  vertical-align: top;
-
 }
 
 .card-content:before {
@@ -43,26 +39,11 @@ hr {
   background-image: linear-gradient(to right, #DCDCDC, #DCDCDC, transparent);
 }
 
-.first {
-  width         : 33%;
-  display       : inline-block;
-  text-align    : center;
-  margin-left   : 7px;
-  vertical-align: top;
-}
-
-.second {
-  width         : 33%;
-  display       : inline-block;
-  text-align    : left;
-  vertical-align: top;
-}
-
-.thrid {
-  width         : 33%;
-  display       : inline-block;
-  text-align    : left;
-  vertical-align: top;
+.card-content {
+  display       : flex;
+  flex-direction: row;
+  gap           : 5%;
+  place-content : center;
 }
 
 .card {
@@ -74,7 +55,6 @@ hr {
   border       : 2px solid #c3c6ce;
   transition   : 0.5s ease-out;
   overflow     : visible;
-  margin-left  : 33%;
 }
 
 .card-details {
@@ -112,37 +92,40 @@ hr {
   height          : 130px;
   margin-top      : 20px;
   margin-bottom   : 20px;
+  display         : flex;
+  flex-direction  : row;
+  place-items     : center;
 }
 
 .s-brand {
   display       : flex;
   flex-direction: row;
-  padding-top   : 25px;
+  gap           : 20px;
 }
 
 .img-brand {
-  width       : 80px;
-  height      : 80px;
-  margin-right: 15px;
+  width : 80px;
+  height: 80px;
+  filter: grayscale(1);
 }
 
 @media screen and (max-width: 899px) {
-  .first {
-    margin    : 20px 0 20px -15%;
-    width     : 100%;
-    text-align: center;
+
+  section {
+    background-image   : url(../../assets/img/map.svg);
+    background-size    : 50%;
+    background-repeat  : no-repeat;
+    background-position: right;
+    display            : inline-block;
+    width              : 100vw;
+    position           : relative;
   }
 
-  .second {
-    margin    : 20px 0 20px -15%;
-    width     : 100%;
-    text-align: center;
-  }
-
-  .thrid {
-    margin    : 20px 0 20px -15%;
-    width     : 100%;
-    text-align: center;
+  .card-content {
+    display       : flex;
+    flex-direction: column;
+    gap           : 15px;
+    align-items   : center;
   }
 
   hr {
