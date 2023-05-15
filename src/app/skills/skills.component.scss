@@ -1,3 +1,14 @@
+section {
+  background-color   : #f9f9ff;
+  background-size    : 27%;
+  background-repeat  : no-repeat;
+  background-position: right top;
+  display            : inline-block;
+  width              : 100vw;
+  position           : relative;
+
+}
+
 .div-content-geral {
   width: 100vw;
 }
@@ -75,9 +86,9 @@ mat-accordion {
   color     : #fff;
 }
 
-.item-c{
-  width: 50%;
-  text-align: left;
+.item-c {
+  width      : 50%;
+  text-align : left;
   margin-left: 20px;
 }
 
