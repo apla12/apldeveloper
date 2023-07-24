@@ -1,61 +1,104 @@
-.body{
-    height: auto;
-    width: 100vw;
-    padding-bottom: 2em;
-    padding-top: 2em;
+section {
+  background-color: #f9f9ff;
+  display         : inline-block;
+  width           : 100vw;
 }
 
-.titulo{
-    padding-top: 10px;
-    font-size: 2.5em;
-    font-family: 'Comfortaa';
-    text-align: center;
-    margin-top: 1em;
+.card-title {
+  color      : #454360;
+  font-size  : 36px;
+  font-family: "Rubik", sans-serif;
+  margin     : 1em 0 0 3em;
+  position   : relative;
+}
+
+.card-title:before {
+  content         : "";
+  background-image: url(../../assets/img/dots-bg.svg);
+  height          : 37px;
+  left            : -21px;
+  top             : -14px;
+  position        : absolute;
+  width           : 37px;
 }
 
 hr {
-    width: 20%;
-    border: 0;
-    margin-bottom: 1em;
-    height: 2px;
-    background-image: linear-gradient(to right, transparent, rgb(82, 81, 81), transparent); 
-}
-
-.menu-central mat-icon {
-    color: #ff6969;
-  }
-  
-.card-container {
-    padding: 5px;
-    cursor: pointer;
-}
-  
-
-.b-portfolio{
-    padding-bottom: 2em;
+  display         : block;
+  margin          : 15px -2px 0 0;
+  text-align      : left;
+  width           : 50vw;
+  border          : 0;
+  height          : 2px;
+  margin-bottom   : 1em;
+  background-image: linear-gradient(to right, #DCDCDC, #DCDCDC, transparent);
 }
 
 
-// mat-card {
-//     width: 90%;
-//     height: 90%;
+
+
+
+
+
+
+
+// .body{
+//     height: auto;
+//     width: 100vw;
+//     padding-bottom: 2em;
+//     padding-top: 2em;
 // }
 
-#fact{
-    background: url(../../assets/img/fact.jpg) no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-    color: #fff;
-    height: 25em;
-}
+// .titulo{
+//     padding-top: 10px;
+//     font-size: 2.5em;
+//     font-family: 'Comfortaa';
+//     text-align: center;
+//     margin-top: 1em;
+// }
 
-.btn-details{
-    width: 132px;
-    margin-bottom: 5px !important;
-    margin-top: 5px !important;
-    background-color: #ff6969;
-    color: #ffffff;
-}
+// hr {
+//     width: 20%;
+//     border: 0;
+//     margin-bottom: 1em;
+//     height: 2px;
+//     background-image: linear-gradient(to right, transparent, rgb(82, 81, 81), transparent);
+// }
+
+// .menu-central mat-icon {
+//     color: #ff6969;
+//   }
+
+// .card-container {
+//     padding: 5px;
+//     cursor: pointer;
+// }
+
+
+// .b-portfolio{
+//     padding-bottom: 2em;
+// }
+
+
+// // mat-card {
+// //     width: 90%;
+// //     height: 90%;
+// // }
+
+// #fact{
+//     background: url(../../assets/img/fact.jpg) no-repeat;
+//     background-attachment: fixed;
+//     background-size: 100%;
+//     background-size: cover;
+//     position: relative;
+//     z-index: 1;
+//     color: #fff;
+//     height: 25em;
+// }
+
+// .btn-details{
+//     width: 132px;
+//     margin-bottom: 5px !important;
+//     margin-top: 5px !important;
+//     background-color: #ff6969;
+//     color: #ffffff;
+// }

@@ -15,6 +15,6 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_APLDEVELOPER_FBE4C }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_APLDEVELOPER_CF797 }}'
           channelId: live
-          projectId: apldeveloper-fbe4c
+          projectId: apldeveloper-cf797

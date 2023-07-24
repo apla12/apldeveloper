@@ -1,4 +1,14 @@
-.footer{
-    height: 15em;
-    background-color: #000;
+section {
+  background-color: #3e3c41;
+  display         : inline-block;
+  width           : 100vw;
+}
+
+
+.card-title {
+  color      : #454360;
+  font-size  : 36px;
+  font-family: "Rubik", sans-serif;
+  margin     : 1em 0 0 3em;
+  position   : relative;
 }

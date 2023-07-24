@@ -1,6 +1,7 @@
 section {
   background-color: #f9f9ff;
   display         : inline-block;
+  width           : 100vw;
 }
 
 .card-title {
@@ -39,17 +40,20 @@ hr {
 
 
 .first {
-  width: 50%;
+  width: 35%;
 }
 
 .card-first {
   padding   : 30px;
+  padding-left: 15em;
   color     : #f8f9fa !important;
   text-align: center !important;
 }
 
 .second {
   width: 50%;
+  display: flex;
+  align-items: center;
 }
 
 .img:hover {
@@ -115,6 +119,12 @@ hr {
 
   .first {
     width: 90%;
+  }
+
+  .card-first {
+    padding   : 30px;
+    color     : #f8f9fa !important;
+    text-align: center !important;
   }
 
   .second {
