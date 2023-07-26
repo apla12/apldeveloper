@@ -1,11 +1,11 @@
-import { Component, ElementRef, OnInit } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss'],
 })
-export class SkillsComponent implements OnInit {
+export class SkillsComponent {
   panelOpenState = false;
 
   servers: any[] = [
@@ -84,8 +84,4 @@ export class SkillsComponent implements OnInit {
   ];
 
   constructor(public el: ElementRef) {}
-
-  ngOnInit(): void {
-    //VanillaTilt.init(this.el.nativeElement.lastChild);
-  }
 }

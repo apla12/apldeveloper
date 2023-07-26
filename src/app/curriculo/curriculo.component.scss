@@ -1,36 +1,25 @@
 section {
-  background-color: #030303b3;
-  width           : 100vw;
-  height          : auto;
-  position        : relative;
   margin-bottom   : 70px;
   margin-top      : 70px;
-  display         : flex;
-  flex-direction  : row;
-  place-items     : center;
 }
 
 .card-content {
   display        : flex;
-  width          : 100vw;
-  text-align     : center;
   justify-content: center;
-}
-
-hr {
-  display         : block;
-  margin          : 15px -2px 0 0;
-  text-align      : left;
-  width           : 50vw;
-  border          : 0;
-  height          : 2px;
-  margin-bottom   : 1em;
-  background-image: linear-gradient(to right, #DCDCDC, #DCDCDC, transparent);
+  background: url(../../assets/img/quote.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  padding: 100px 0px;
+  color: #fff;
 }
 
 .btn-d {
   margin: 1rem;
   padding-bottom: 20px;
+  display        : flex;
+  justify-content: center;
 }
 
 button {

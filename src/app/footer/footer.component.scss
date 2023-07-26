@@ -1,9 +1,25 @@
 section {
-  background-color: #3e3c41;
-  display         : inline-block;
-  width           : 100vw;
+  width: 100vw;
 }
 
+.footer-title {
+  background-color: #3e3c41;
+  height          : 200px;
+  width           : 100%;
+  display         : flex;
+  justify-content : center;
+}
+
+.t-img {
+  width: 30em;
+}
+
+
+.footer-div {
+  background-color: #363337;
+  height          : 40px;
+  width           : 100%;
+}
 
 .card-title {
   color      : #454360;
