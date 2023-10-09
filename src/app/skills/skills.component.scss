@@ -46,9 +46,9 @@ section {
 }
 
 .progress-bar-item {
-  width     : 85%;
+  width     : 76%;
   margin    : 9px 0 0 20px;
-  background: #f5bbbb;
+  background: #f2d2d2;
   color     : #fff;
 }
 
@@ -64,6 +64,12 @@ section {
 h5 {
   width     : 120px;
   text-align: right;
+}
+
+.h5_level {
+  width      : 105px;
+  text-align : left;
+  margin-left: 10px;
 }
 
 mat-accordion {

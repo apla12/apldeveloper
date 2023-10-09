@@ -3,10 +3,11 @@
     <div class="first">
       <h2 class="presentation">{{ textcv }}</h2>
       <div class="btn-d">
-        <button mat-raised-button>
+        <button mat-raised-button (click)="downloadAttachmentCvEN()">
           <mat-icon>cloud_download</mat-icon> English
+
         </button>
-        <button mat-raised-button>
+        <button mat-raised-button (click)="downloadAttachmentCvPT()">
           <mat-icon>cloud_download</mat-icon> Portuguese
         </button>
       </div>

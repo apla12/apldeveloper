@@ -11,6 +11,7 @@
 .menu-fundo {
   background-color: #212121;
   color           : #fff;
+
 }
 
 .menu-spacer {
@@ -20,4 +21,20 @@
 .items-menu {
   text-align: right;
   width     : 100%;
+}
+
+.wait {
+  color: #ffc048;
+}
+
+.wait-aling {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+}
+
+.wait-img {
+  width       : 3em;
+  margin-right: 1em;
+  margin-left : 1em;
 }

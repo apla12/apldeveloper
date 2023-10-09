@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { LayoutModule } from '@angular/cdk/layout';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 import { CurriculoComponent } from './curriculo/curriculo.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { MaterialModule } from './material.module';
 import { MenuComponent } from './menu/menu.component';
 import { DialogbbComponent } from './portfolio/dialog/dialog-bb.component';
 import { DialogCaixaComponent } from './portfolio/dialog/dialog-caixa.component';
@@ -20,15 +24,10 @@ import { DialogTcuComponent } from './portfolio/dialog/dialog-tcu.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ServicesComponent } from './services/services.component';
 import { SkillsComponent } from './skills/skills.component';
-import { ContactComponent } from './contact/contact.component';
-import { MaterialModule } from './material.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LayoutModule } from '@angular/cdk/layout';
 
 @NgModule({
   declarations: [
     AppComponent,
-
     AboutComponent,
     ContactComponent,
     CurriculoComponent,
@@ -38,7 +37,6 @@ import { LayoutModule } from '@angular/cdk/layout';
     PortfolioComponent,
     ServicesComponent,
     SkillsComponent,
-
     DialogbbComponent,
     DialogCaixaComponent,
     DialogCamaraComponent,

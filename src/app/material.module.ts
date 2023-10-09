@@ -72,7 +72,7 @@ import {COMMA, ENTER, SPACE} from '@angular/cdk/keycodes';
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatTreeModule,
+    MatTreeModule
   ],
   declarations: [],
   providers: [
