@@ -8,8 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
   txtAbout: any =
-    'Developer of Java Web / full stack systems with more than 10 years of experience, providing services to several companies with clients in the financial and corporate areas.' +
-    'Among the main activities carried out are backend development with various java structures, such as: monolithic and microservices.';
+      'Developer with over a decade of experience in Java systems, offering services to multiple' +
+      'companies with clients in the financial and corporate sectors. My main responsibilities include ' +
+      'Java back-end development using various structures, including monolithic and microservices.';
+
+    // 'Developer of Java Web / full stack systems with more than 10 years of experience, providing services to several companies with clients in the financial and corporate areas.' +
+    // 'Among the main activities carried out are backend development with various java structures, such as: monolithic and microservices.';
 
   viewMenu = false;
 

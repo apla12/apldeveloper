@@ -1,5 +1,9 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { CurriculoService } from '../service/curriculo.service';
+
+interface Item {
+  name: string;
+}
 
 @Component({
   selector: 'app-curriculo',
@@ -9,15 +13,22 @@ import { CurriculoService } from '../service/curriculo.service';
 export class CurriculoComponent implements OnInit {
   textcv: any = 'For more details, download a copy of my curriculum.';
 
-  constructor(private service: CurriculoService) {}
+  //item$: Observable<Item[]>;
 
-  ngOnInit(): void {}
+  constructor(private _http: HttpClient) {
+    //const itemCollection = collection(this.firestore, 'items');
+    //this.item$ = collectionData(itemCollection) as Observable<Item[]>;
+  }
+
+  ngOnInit(): void {
+    console.log('init');
+  }
 
   downloadAttachmentCvEN() {
-    this.service.downloadAttachmentCvEN();
+    console.log('EN');
   }
 
   downloadAttachmentCvPT() {
-    this.service.downloadAttachmentCvEN();
+    console.log('PT');
   }
 }

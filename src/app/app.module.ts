@@ -1,7 +1,7 @@
+import { LayoutModule } from '@angular/cdk/layout';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { LayoutModule } from '@angular/cdk/layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -53,6 +53,11 @@ import { SkillsComponent } from './skills/skills.component';
     MaterialModule,
     BrowserAnimationsModule,
     LayoutModule,
+    HttpClientModule,
+
+    //AngularFireModule.initializeApp(firebaseConfig),
+    //AngularFireDatabaseModule,
+    //AngularFireStorageModule
   ],
   providers: [],
   bootstrap: [AppComponent],
