@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "apldeveloper-cf797": {
+      "hosting": {
+        "apldeveloper": [
+          "apldeveloper-cf797"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "apldeveloper-cf797"
+  }
+}

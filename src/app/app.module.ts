@@ -1,6 +1,18 @@
 import { LayoutModule } from '@angular/cdk/layout';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import {
+  ScreenTrackingService,
+  UserTrackingService,
+  getAnalytics,
+  provideAnalytics,
+} from '@angular/fire/analytics';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { getAuth, provideAuth } from '@angular/fire/auth';
+import { getDatabase, provideDatabase } from '@angular/fire/database';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { getFunctions, provideFunctions } from '@angular/fire/functions';
+import { getStorage, provideStorage } from '@angular/fire/storage';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './about/about.component';
@@ -54,12 +66,28 @@ import { SkillsComponent } from './skills/skills.component';
     BrowserAnimationsModule,
     LayoutModule,
     HttpClientModule,
-
-    //AngularFireModule.initializeApp(firebaseConfig),
-    //AngularFireDatabaseModule,
-    //AngularFireStorageModule
+    provideFirebaseApp(() =>
+      initializeApp({
+        projectId: 'apldeveloper-cf797',
+        appId: '1:1093185570159:web:2542b497c148da77e3549a',
+        databaseURL:
+          'https://apldeveloper-cf797-default-rtdb.europe-west1.firebasedatabase.app',
+        storageBucket: 'apldeveloper-cf797.appspot.com',
+        //locationId: 'europe-west',
+        apiKey: 'AIzaSyClTJft5csa8U0KbNQjknUk0Q6OJ5Z408Y',
+        authDomain: 'apldeveloper-cf797.firebaseapp.com',
+        messagingSenderId: '1093185570159',
+        measurementId: 'G-D0Y42TXP33',
+      })
+    ),
+    provideAuth(() => getAuth()),
+    provideAnalytics(() => getAnalytics()),
+    provideFirestore(() => getFirestore()),
+    provideDatabase(() => getDatabase()),
+    provideFunctions(() => getFunctions()),
+    provideStorage(() => getStorage()),
   ],
-  providers: [],
+  providers: [ScreenTrackingService, UserTrackingService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
