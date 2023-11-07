@@ -66,6 +66,7 @@ import { SkillsComponent } from './skills/skills.component';
     BrowserAnimationsModule,
     LayoutModule,
     HttpClientModule,
+
     provideFirebaseApp(() =>
       initializeApp({
         projectId: 'apldeveloper-cf797',
