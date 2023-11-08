@@ -77,4 +77,16 @@ button:active {
     gap           : 10px;
   }
 
+  .card-content {
+    display              : flex;
+    justify-content      : center;
+    background           : url(../../assets/img/quote.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size      : cover;
+    position             : relative;
+   // z-index              : 1;
+    padding              : 100px 0px;
+    color                : #fff;
+  }
+
 }
