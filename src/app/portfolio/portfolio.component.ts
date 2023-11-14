@@ -12,19 +12,34 @@ import { DialogTcuComponent } from './dialog/dialog-tcu.component';
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss']
+  styleUrls: ['./portfolio.component.scss'],
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor(private dialog: MatDialog) { }
+  experiences = [
+    { key: '1', text: 'position' },
+    { key: '2', text: 'technology' },
+    { key: '3', text: 'client' },
+    { key: '4', text: 'company' }
+  ];
+
+  container:any;
+
+  filterMixItUp(){
+    this.container.mixItUp();
+  }
+
+  constructor(private dialog: MatDialog) {}
 
   ngOnInit(): void {
+    console.log(this.experiences);
+    this.container.mixItUp();
   }
 
   openDialogTCU() {
     const dialogRef = this.dialog.open(DialogTcuComponent);
 
-    dialogRef.afterClosed().subscribe(result => {
+    dialogRef.afterClosed().subscribe((result) => {
       console.log(`Dialog result: ${result}`);
     });
   }
@@ -32,7 +47,7 @@ export class PortfolioComponent implements OnInit {
   openDialogCNI() {
     const dialogRef = this.dialog.open(DialogCniComponent);
 
-    dialogRef.afterClosed().subscribe(result => {
+    dialogRef.afterClosed().subscribe((result) => {
       console.log(`Dialog result: ${result}`);
     });
   }
@@ -40,7 +55,7 @@ export class PortfolioComponent implements OnInit {
   openDialogCamara() {
     const dialogRef = this.dialog.open(DialogCamaraComponent);
 
-    dialogRef.afterClosed().subscribe(result => {
+    dialogRef.afterClosed().subscribe((result) => {
       console.log(`Dialog result: ${result}`);
     });
   }
@@ -48,7 +63,7 @@ export class PortfolioComponent implements OnInit {
   openDialogBB() {
     const dialogRef = this.dialog.open(DialogbbComponent);
 
-    dialogRef.afterClosed().subscribe(result => {
+    dialogRef.afterClosed().subscribe((result) => {
       console.log(`Dialog result: ${result}`);
     });
   }
@@ -56,16 +71,15 @@ export class PortfolioComponent implements OnInit {
   openDialogPF() {
     const dialogRef = this.dialog.open(DialogPfComponent);
 
-    dialogRef.afterClosed().subscribe(result => {
+    dialogRef.afterClosed().subscribe((result) => {
       console.log(`Dialog result: ${result}`);
     });
   }
 
-
   openDialogSicoob() {
     const dialogRef = this.dialog.open(DialogSicoobComponent);
 
-    dialogRef.afterClosed().subscribe(result => {
+    dialogRef.afterClosed().subscribe((result) => {
       console.log(`Dialog result: ${result}`);
     });
   }
@@ -73,7 +87,7 @@ export class PortfolioComponent implements OnInit {
   openDialogCaixa() {
     const dialogRef = this.dialog.open(DialogCaixaComponent);
 
-    dialogRef.afterClosed().subscribe(result => {
+    dialogRef.afterClosed().subscribe((result) => {
       console.log(`Dialog result: ${result}`);
     });
   }
@@ -81,9 +95,8 @@ export class PortfolioComponent implements OnInit {
   openDialogSTF() {
     const dialogRef = this.dialog.open(DialogStfComponent);
 
-    dialogRef.afterClosed().subscribe(result => {
+    dialogRef.afterClosed().subscribe((result) => {
       console.log(`Dialog result: ${result}`);
     });
   }
-
 }

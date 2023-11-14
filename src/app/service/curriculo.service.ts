@@ -4,13 +4,12 @@ import { getDownloadURL, getStorage, ref } from 'firebase/storage';
   providedIn: 'root',
 })
 export class CurriculoService {
-  constructor() {}
 
   downloadAttachment(nameFile: any) {
     const storage = getStorage();
     getDownloadURL(ref(storage, nameFile))
       .then(function (url) {
-        var link = document.createElement('a');
+        let link = document.createElement('a');
         link.setAttribute('href', url);
         link.style.visibility = 'hidden';
         document.body.appendChild(link);

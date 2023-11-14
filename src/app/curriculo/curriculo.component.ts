@@ -14,10 +14,10 @@ export class CurriculoComponent implements OnInit {
   ngOnInit(): void {}
 
   cvEN() {
-    this.service.downloadAttachment('/cv-apl-in.pdf');
+    this.service.downloadAttachment('/cv-apl-english.pdf');
   }
 
   cvPT() {
-    this.service.downloadAttachment('/cv-apl-pt.pdf');
+    this.service.downloadAttachment('/cv-apl-portuguese.pdf');
   }
 }
