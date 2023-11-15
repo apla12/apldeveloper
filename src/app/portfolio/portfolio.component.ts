@@ -15,25 +15,28 @@ import { DialogTcuComponent } from './dialog/dialog-tcu.component';
   styleUrls: ['./portfolio.component.scss'],
 })
 export class PortfolioComponent implements OnInit {
-
   experiences = [
-    { key: '1', text: 'position' },
-    { key: '2', text: 'technology' },
-    { key: '3', text: 'client' },
-    { key: '4', text: 'company' }
+    { key: '1', name: 'ALL' },
+    { key: '2', name: 'POSITION' },
+    { key: '3', name: 'TECHNOLOGY' },
+    { key: '4', name: 'CLIENT' },
+    { key: '5', name: 'COMPANY' },
   ];
 
-  container:any;
-
-  filterMixItUp(){
-    this.container.mixItUp();
-  }
+  classCss: any;
 
   constructor(private dialog: MatDialog) {}
 
   ngOnInit(): void {
     console.log(this.experiences);
-    this.container.mixItUp();
+
+    for (let item of this.experiences) {
+      if (item.key == '1') {
+        this.classCss = 'active';
+      } else {
+        this.classCss = 'filter';
+      }
+    }
   }
 
   openDialogTCU() {

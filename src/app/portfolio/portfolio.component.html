@@ -6,180 +6,127 @@
 
   <div id="portfolio">
     <div class="container">
-      <ul class="work-list">
-        <li class="filter active" data-filter="all">ALL</li>
-        <li class="filter" data-filter=".webdesign">POSITION</li>
-        <li class="filter" data-filter=".graphic">TECHNOLOGY</li>
-        <li class="filter" data-filter=".photography">CLIENT</li>
-        <li class="filter" data-filter=".photography">COMPANY</li>
+      <ul class="work-list text-center" *ngFor="let item of experiences">
+        <li [class]="classCss">{{item.name}}</li>
       </ul>
       <div class="row">
         <div id="parent">
-          <!-- First Portfolio Item -->
-          <div class="mix graphic">
-            <div class="portfolio-item">
-              <img src="../../assets/img/1.jpg" alt="" class="img-responsive"> <!-- Edit Image -->
-              <div class="overlay">
-                <div class="work-table">
-                  <div class="table-cell">
-                    <div class="work-content">
-                      <h3>Project Title</h3>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <a href="../../assets/img/1.jpg" class="gallery"><i class="fa fa-camera"
-                          aria-hidden="true"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+          <div class="mix">
+            <mat-card class="card">
+              <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
+              <mat-card-content class="text-content-card">
+                <p>
+                  Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
+                </p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button>SEE MORE</button>
+              </mat-card-actions>
+            </mat-card>
           </div>
-          <!-- Second Portfolio Item -->
-          <div class="col-sm-6 col-md-4 mix webdesign">
-            <div class="portfolio-item">
-              <img src="../../assets/img/1.jpg" alt="" class="img-responsive"> <!-- Edit Image -->
-              <div class="overlay">
-                <div class="work-table">
-                  <div class="table-cell">
-                    <div class="work-content">
-                      <h3>Project Title</h3>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <a href="../../assets/img/1.jpg" class="gallery"><i class="fa fa-camera"
-                          aria-hidden="true"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+          <div class="mix">
+            <mat-card class="card">
+              <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
+              <mat-card-content class="text-content-card">
+                <p>
+                  Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
+                </p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button>SEE MORE</button>
+              </mat-card-actions>
+            </mat-card>
           </div>
-          <!-- Third Portfolio Item -->
-          <div class="col-sm-6 col-md-4 mix photography">
-            <div class="portfolio-item">
-              <img src="../../assets/img/1.jpg" alt="" class="img-responsive"> <!-- Edit Image -->
-              <div class="overlay">
-                <div class="work-table">
-                  <div class="table-cell">
-                    <div class="work-content">
-                      <h3>Project Title</h3>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <a href="../../assets/img/1.jpg" class="gallery"><i class="fa fa-camera"
-                          aria-hidden="true"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+          <div class="mix">
+            <mat-card class="card">
+              <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
+              <mat-card-content class="text-content-card">
+                <p>
+                  Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
+                </p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button>SEE MORE</button>
+              </mat-card-actions>
+            </mat-card>
           </div>
-          <!-- Fourth Portfolio Item -->
-          <div class="col-sm-6 col-md-4 mix photography">
-            <div class="portfolio-item">
-              <img src="../../assets/img/1.jpg" alt="" class="img-responsive"> <!-- Edit Image -->
-              <div class="overlay">
-                <div class="work-table">
-                  <div class="table-cell">
-                    <div class="work-content">
-                      <h3>Project Title</h3>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <a href="../../assets/img/1.jpg" class="gallery"><i class="fa fa-camera"
-                          aria-hidden="true"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+          <div class="mix">
+            <mat-card class="card">
+              <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
+              <mat-card-content class="text-content-card">
+                <p>
+                  Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
+                </p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button>SEE MORE</button>
+              </mat-card-actions>
+            </mat-card>
           </div>
-          <!-- Fifth Portfolio Item -->
-          <div class="col-sm-6 col-md-4 mix graphic">
-            <div class="portfolio-item">
-              <img src="../../assets/img/1.jpg" alt="" class="img-responsive"> <!-- Edit Image -->
-              <div class="overlay">
-                <div class="work-table">
-                  <div class="table-cell">
-                    <div class="work-content">
-                      <h3>Project Title</h3>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <a href="../../assets/img/1.jpg" class="gallery"><i class="fa fa-camera"
-                          aria-hidden="true"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+          <div class="mix">
+            <mat-card class="card">
+              <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
+              <mat-card-content class="text-content-card">
+                <p>
+                  Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
+                </p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button>SEE MORE</button>
+              </mat-card-actions>
+            </mat-card>
           </div>
-          <!-- Sixth Portfolio Item -->
-          <div class="col-sm-6 col-md-4 mix webdesign">
-            <div class="portfolio-item">
-              <img src="../../assets/img/1.jpg" alt="" class="img-responsive"> <!-- Edit Image -->
-              <div class="overlay">
-                <div class="work-table">
-                  <div class="table-cell">
-                    <div class="work-content">
-                      <h3>Project Title</h3>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <a href="../../assets/img/1.jpg" class="gallery"><i class="fa fa-camera"
-                          aria-hidden="true"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+          <div class="mix">
+            <mat-card class="card">
+              <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
+              <mat-card-content class="text-content-card">
+                <p>
+                  Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
+                </p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button>SEE MORE</button>
+              </mat-card-actions>
+            </mat-card>
           </div>
-          <!-- Seventh Portfolio Item -->
-          <div class="col-sm-6 col-md-4 mix graphic">
-            <div class="portfolio-item">
-              <img src="../../assets/img/1.jpg" alt="" class="img-responsive"> <!-- Edit Image -->
-              <div class="overlay">
-                <div class="work-table">
-                  <div class="table-cell">
-                    <div class="work-content">
-                      <h3>Project Title</h3>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <a href="../../assets/img/1.jpg" class="gallery"><i class="fa fa-camera"
-                          aria-hidden="true"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+          <div class="mix">
+            <mat-card class="card">
+              <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
+              <mat-card-content class="text-content-card">
+                <p>
+                  Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
+                </p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button>SEE MORE</button>
+              </mat-card-actions>
+            </mat-card>
           </div>
-          <!-- Eighth Portfolio Item -->
-          <div class="col-sm-6 col-md-4 mix webdesign">
-            <div class="portfolio-item">
-              <img src="../../assets/img/1.jpg" alt="" class="img-responsive"> <!-- Edit Image -->
-              <div class="overlay">
-                <div class="work-table">
-                  <div class="table-cell">
-                    <div class="work-content">
-                      <h3>Project Title</h3>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <a href="../../assets/img/1.jpg" class="gallery"><i class="fa fa-camera"
-                          aria-hidden="true"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+          <div class="mix">
+            <mat-card class="card">
+              <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
+              <mat-card-content class="text-content-card">
+                <p>
+                  Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
+                </p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button>SEE MORE</button>
+              </mat-card-actions>
+            </mat-card>
           </div>
-          <!-- Nineth Portfolio Item -->
-          <div class="col-sm-6 col-md-4 mix photography">
-            <div class="portfolio-item">
-              <img src="../../assets/img/1.jpg" alt="" class="img-responsive"> <!-- Edit Image -->
-              <div class="overlay">
-                <div class="work-table">
-                  <div class="table-cell">
-                    <div class="work-content">
-                      <h3>Project Title</h3>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <a href="../../assets/img/1.jpg" class="gallery"><i class="fa fa-camera"
-                          aria-hidden="true"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
   </div>
-  <!-- ========== End of Portfolio ========== -->
+
 </section>
