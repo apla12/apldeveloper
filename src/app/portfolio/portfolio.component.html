@@ -4,129 +4,187 @@
     <hr />
   </div>
 
-  <div id="portfolio">
-    <div class="container">
-      <ul class="work-list text-center" *ngFor="let item of experiences">
-        <li [class]="classCss">{{item.name}}</li>
-      </ul>
-      <div class="row">
-        <div id="parent">
-
-          <div class="mix">
-            <mat-card class="card">
-              <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
-              <mat-card-content class="text-content-card">
-                <p>
-                  Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
-                </p>
-              </mat-card-content>
-              <mat-card-actions>
-                <button mat-button>SEE MORE</button>
-              </mat-card-actions>
-            </mat-card>
-          </div>
-
-          <div class="mix">
-            <mat-card class="card">
-              <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
-              <mat-card-content class="text-content-card">
-                <p>
-                  Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
-                </p>
-              </mat-card-content>
-              <mat-card-actions>
-                <button mat-button>SEE MORE</button>
-              </mat-card-actions>
-            </mat-card>
-          </div>
-
-          <div class="mix">
-            <mat-card class="card">
-              <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
-              <mat-card-content class="text-content-card">
-                <p>
-                  Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
-                </p>
-              </mat-card-content>
-              <mat-card-actions>
-                <button mat-button>SEE MORE</button>
-              </mat-card-actions>
-            </mat-card>
-          </div>
-
-          <div class="mix">
-            <mat-card class="card">
-              <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
-              <mat-card-content class="text-content-card">
-                <p>
-                  Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
-                </p>
-              </mat-card-content>
-              <mat-card-actions>
-                <button mat-button>SEE MORE</button>
-              </mat-card-actions>
-            </mat-card>
-          </div>
-
-          <div class="mix">
-            <mat-card class="card">
-              <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
-              <mat-card-content class="text-content-card">
-                <p>
-                  Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
-                </p>
-              </mat-card-content>
-              <mat-card-actions>
-                <button mat-button>SEE MORE</button>
-              </mat-card-actions>
-            </mat-card>
-          </div>
-
-          <div class="mix">
-            <mat-card class="card">
-              <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
-              <mat-card-content class="text-content-card">
-                <p>
-                  Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
-                </p>
-              </mat-card-content>
-              <mat-card-actions>
-                <button mat-button>SEE MORE</button>
-              </mat-card-actions>
-            </mat-card>
-          </div>
-
-          <div class="mix">
-            <mat-card class="card">
-              <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
-              <mat-card-content class="text-content-card">
-                <p>
-                  Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
-                </p>
-              </mat-card-content>
-              <mat-card-actions>
-                <button mat-button>SEE MORE</button>
-              </mat-card-actions>
-            </mat-card>
-          </div>
-
-          <div class="mix">
-            <mat-card class="card">
-              <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
-              <mat-card-content class="text-content-card">
-                <p>
-                  Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
-                </p>
-              </mat-card-content>
-              <mat-card-actions>
-                <button mat-button>SEE MORE</button>
-              </mat-card-actions>
-            </mat-card>
-          </div>
-
-        </div>
-      </div>
-    </div>
+  <div id="myContainer">
+    <ul>
+      <li id="all" class="btn active" (click)="filterSelection('all')">ALL</li>
+      <li id="position" class="btn" (click)="filterSelection('position')">POSITION</li>
+      <li id="technology" class="btn" (click)="filterSelection('technology')">TECHNOLOGY</li>
+      <li id="client" class="btn" (click)="filterSelection('client')">CLIENT</li>
+      <li id="company" class="btn" (click)="filterSelection('company')">COMPANY</li>
+    </ul>
   </div>
 
+  <div class="container">
+    <div class="content">
+
+      <div class="filterDiv position">
+        <mat-card class="card">
+          <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
+          <mat-card-content class="text-content-card">
+            <p>
+              Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>SEE MORE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+
+      <div class="filterDiv company client">
+        <mat-card class="card">
+          <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
+          <mat-card-content class="text-content-card">
+            <p>
+              Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>SEE MORE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+
+      <div class="filterDiv position">
+        <mat-card class="card">
+          <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
+          <mat-card-content class="text-content-card">
+            <p>
+              Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>SEE MORE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+
+      <div class="filterDiv company">
+        <mat-card class="card">
+          <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
+          <mat-card-content class="text-content-card">
+            <p>
+              Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>SEE MORE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+
+      <div class="filterDiv position">
+        <mat-card class="card">
+          <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
+          <mat-card-content class="text-content-card">
+            <p>
+              Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>SEE MORE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+
+      <div class="filterDiv company">
+        <mat-card class="card">
+          <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
+          <mat-card-content class="text-content-card">
+            <p>
+              Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>SEE MORE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+
+      <div class="filterDiv technology">
+        <mat-card class="card">
+          <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
+          <mat-card-content class="text-content-card">
+            <p>
+              Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>SEE MORE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+
+      <div class="filterDiv technology">
+        <mat-card class="card">
+          <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
+          <mat-card-content class="text-content-card">
+            <p>
+              Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>SEE MORE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+
+      <div class="filterDiv client">
+        <mat-card class="card">
+          <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
+          <mat-card-content class="text-content-card">
+            <p>
+              Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>SEE MORE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+
+      <div class="filterDiv client technology">
+        <mat-card class="card">
+          <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
+          <mat-card-content class="text-content-card">
+            <p>
+              Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>SEE MORE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+
+      <div class="filterDiv client">
+        <mat-card class="card">
+          <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
+          <mat-card-content class="text-content-card">
+            <p>
+              Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>SEE MORE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+
+      <div class="filterDiv client">
+        <mat-card class="card">
+          <img mat-card-image src="../../assets/img/1.jpg" alt="experiences">
+          <mat-card-content class="text-content-card">
+            <p>
+              Lorem ipsum dolor sit amet. Ut accusamus deleniti et laboriosam labore ex eveniet voluptatem?
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>SEE MORE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+
+    </div>
+  </div>
 </section>
