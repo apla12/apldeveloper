@@ -1,39 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 
-class Experience {
-  position: String | undefined;
-  dateAt: String | undefined;
-  dateEnd: String | undefined;
-  client: String | undefined;
-  description: String | undefined;
-  technology: Technology | undefined;
-}
-
-class Technology {
-  backend: Backend | undefined;
-  frontend: Frontend | undefined;
-  database: Database | undefined;
-  otherInformation: String | undefined;
-}
-
-class Backend {
-  description: String | undefined;
-  timeExperience: String | undefined;
-  level: String | undefined;
-}
-
-class Frontend {
-  description: String | undefined;
-  timeExperience: String | undefined;
-  level: String | undefined;
-}
-class Database {
-  description: String | undefined;
-  timeExperience: String | undefined;
-  level: String | undefined;
-}
-
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
